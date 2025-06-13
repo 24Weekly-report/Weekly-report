@@ -1,8 +1,8 @@
-25.6.13
+# 25.6.13
 
-## 1.解决了上海项目的两个新需求
-## 2.完成了数学建模的一道题
-## 3.读了一篇文章：Mix-of-Granularity: Optimize the Chunking Granularity for Retrieval-Augmented Generation
+1.解决了上海项目的两个新需求
+2.完成了数学建模的一道题
+3.读了一篇文章：Mix-of-Granularity: Optimize the Chunking Granularity for Retrieval-Augmented Generation
 
 笔记如下：
 
