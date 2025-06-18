@@ -1,8 +1,8 @@
 2025.6.13
 
-阅读一篇论文
+阅读一篇论文Descriptive and Discriminative Document Identifiers for Generative Retrieval(AAAI25)[[笔记](https://github.com/24Weekly-report/Weekly-report/blob/7da1ce270211d84b2c261d88ccebf89847225709/%E6%9D%8E%E6%B5%A9%E5%BC%BA/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/Descriptive%20and%20Discriminative%20Document%20Identifiers%20for%20Generative%20Retrieval(AAAI25).md)]
 
-
+完成数学建模一题。
 
 2025.6.13
 
