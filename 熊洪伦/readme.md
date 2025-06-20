@@ -1,4 +1,52 @@
-# 25.6.13
+# 25.6.20
+
+## 1.完成数学建模一道题
+
+## 2.复现了一篇论文，打算将这篇论文作为我的baseline，下一步思考在这篇论文的基础上创新，论文名（MMLF:Multi-query Multi-passage Late Fusion Retrieval），发表于naacl 2025
+
+MMLF方法概述：
+
+首先用大模型从原始查询分解出多个子查询（如针对“COVID-19治疗药物”生成“瑞德西韦疗效”“中药抗病毒作用”等子意图），接着将每个子查询扩展成独立段落（段落需同时回应原子查询和子查询），随后对原始查询和每个段落分别进行稠密检索，得到多个结果列表，最终通过排序融合算法（RRF）合并这些列表——即根据文档在不同列表中的排名计算加权得分，生成统一的排序结果。
+
+
+
+## 3.读了一篇相同领域的论文
+
+MILL: Mutual Verification with Large Language Models for Zero-Shot Query Expansion
+
+MILL方法流程总结​
+
+​​1.输入​​：原始查询q
+
+​​2.生成阶段​​：
+
+生成N个子查询 $\{q_1,q_2,\ldots,q_N\}$ ​​每个子查询生成一个文档​​ $d_n^{LLM}$ （包含子查询+对应段落）  得到N个生成文档， $\mathcal{D}^{LLM}=\{d_1^{LLM},\ldots,d_N^{LLM}\}$
+
+3.​​检索阶段​​：
+
+用 BM25 检索原始查询 q，得到K个文档 $\mathcal{D}^{PRF}=\{d_1^{PRF},\ldots,d_K^{PRF}\}$
+
+​​4.互验证：
+
+构建N×K相似度矩阵（计算每个 $d_n^{LLM}$ 与 $d_k^{PRF}$ 的余弦相似度）
+
+计算生成文档得分： $s_n^{LLM}=\sum_{k=1}^K\sin(d_n^{LLM},d_k^{PRF})$
+
+计算检索文档得分： $s_k^{PRF}=\sum_{n=1}^N\sin(d_k^{PRF},d_n^{LLM})$
+
+筛选： 取 $\mathrm{Top}_{N^{\prime}}$ 生成文档 $\mathcal{D}_s^{LLM}$ （高 $s_n^{LLM}$  值）
+
+取 $\mathrm{Top}_{K^{\prime}}$ 检索文档 $\mathcal{D}_s^{PRF}$ （高 $s_k^{PRF}$ 值）
+
+5.查询扩展​​：
+
+构造新查询 
+
+$\mid q^{\prime}=\underbrace{qqqqq}_{\text{原始查询重复5次}}\mathcal{D}_s^{PRF}\mathcal{D}_s^{LLM}$
+
+6.最终检索​​：用 $q^{\prime}$ 执行稠密检索（如 ANCE、DPR）
+
+# 25.6.13  
 
 1.解决了上海项目的两个新需求
 
