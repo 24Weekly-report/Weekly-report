@@ -1,3 +1,11 @@
+# 25.6.27
+
+## 1.完成数学建模一道题
+
+## 2.看了一篇论文 QA-Expand: Multi-Question Answer Generation for Enhanced Query Expansion in Information Retrieval
+
+## 3.正在mmlf这篇论文上加代码
+
 # 25.6.20
 
 ## 1.完成数学建模一道题
