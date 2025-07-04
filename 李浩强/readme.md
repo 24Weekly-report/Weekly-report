@@ -1,3 +1,11 @@
+2025.7.4
+
+阅读一篇论文DREQ: Document Re-Ranking Using Entity-based Query Understanding（SIGIR 25）[[笔记](https://github.com/24Weekly-report/Weekly-report/blob/7520c7421e72111e530d65334b31dcd586edb9b6/%E6%9D%8E%E6%B5%A9%E5%BC%BA/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/DREQ%3A%20Document%20Re-Ranking%20Using%20Entity-based%20Query%20Understanding%EF%BC%88SIGIR%2025%EF%BC%89.md)]
+
+完成数学建模一题。
+
+跑实验
+
 2025.6.27
 
 阅读一篇论文reinforcement learning for adversarial query generation to enhance relevance in cold start product search (ACL25)[[笔记](https://github.com/24Weekly-report/Weekly-report/blob/5ec32fa242f37bc49d1486cb2e1e265265d4d9f1/%E6%9D%8E%E6%B5%A9%E5%BC%BA/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/reinforcement%20learning%20for%20adversarial%20query%20generation%20to%20enhance%20relevance%20in%20cold%20start%20product%20search%20ACL25.md)]
