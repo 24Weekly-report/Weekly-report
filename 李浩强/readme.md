@@ -1,3 +1,12 @@
+2025.7.11
+
+阅读一篇论文DRAMA： Diverse Augmentation from Large Language Models to Smaller Dense Retrievers  ACL2025[[笔记](https://github.com/24Weekly-report/Weekly-report/blob/62d83f9762f3696062d37c880d272e9cc533afff/%E6%9D%8E%E6%B5%A9%E5%BC%BA/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/DRAMA%EF%BC%9A%20Diverse%20Augmentation%20from%20Large%20Language%20Models%20to%20Smaller%20Dense%20Retrievers%20%20ACL2025.md)]
+
+完成数学建模一题。
+
+跑实验
+
+
 2025.7.4
 
 阅读一篇论文DREQ: Document Re-Ranking Using Entity-based Query Understanding（SIGIR 25）[[笔记](https://github.com/24Weekly-report/Weekly-report/blob/7520c7421e72111e530d65334b31dcd586edb9b6/%E6%9D%8E%E6%B5%A9%E5%BC%BA/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/DREQ%3A%20Document%20Re-Ranking%20Using%20Entity-based%20Query%20Understanding%EF%BC%88SIGIR%2025%EF%BC%89.md)]
