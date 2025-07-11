@@ -1,6 +1,10 @@
 # 25.7.11
 
-## 1.看了一篇论文 ExpandR: Teaching Dense Retrievers Beyond Queries with LLM Guidance
+## 1.给上海的横向解决了一个bug（输入错误数字的情况下，前端会提示输入错误，但是系统依旧会保存）
+
+## 2.共同完成了一道建模题
+
+## 3.看了一篇论文 ExpandR: Teaching Dense Retrievers Beyond Queries with LLM Guidance
 
 方法概述：联合优化LLM（生成查询扩展）和稠密检索器，提升语义匹配效果。
 
