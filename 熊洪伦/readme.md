@@ -27,9 +27,7 @@
 
 # 25.6.20
 
-## 1.完成数学建模一道题
-
-## 2.复现了一篇论文，打算将这篇论文作为我的baseline，下一步思考在这篇论文的基础上创新，论文名（MMLF:Multi-query Multi-passage Late Fusion Retrieval），发表于naacl 2025
+## 1.复现了一篇论文，打算将这篇论文作为我的baseline，下一步思考在这篇论文的基础上创新，论文名（MMLF:Multi-query Multi-passage Late Fusion Retrieval），发表于naacl 2025
 
 MMLF方法概述：
 
@@ -37,7 +35,7 @@ MMLF方法概述：
 
 
 
-## 3.读了一篇相同领域的论文
+## 2.读了一篇相同领域的论文
 
 MILL: Mutual Verification with Large Language Models for Zero-Shot Query Expansion
 
