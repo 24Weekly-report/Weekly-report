@@ -1,3 +1,58 @@
+# 25.7.11
+
+## 1.看了一篇论文 ExpandR: Teaching Dense Retrievers Beyond Queries with LLM Guidance
+
+方法概述：联合优化LLM（生成查询扩展）和稠密检索器，提升语义匹配效果。
+
+1. 整体架构
+
+输入：原始查询q,文档集合D
+
+LLM生成扩展：
+
+<img width="330" height="72" alt="image" src="https://github.com/user-attachments/assets/3f109eae-99fb-428c-9137-201beca4d5a5" />
+
+
+指令模板："请根据问题生成信息丰富的扩展段落"
+
+联合概率建模：
+
+<img width="636" height="103" alt="image" src="https://github.com/user-attachments/assets/8b603d78-4873-4a5b-a1de-a1c66eee5fd6" />
+
+其中  $$\Phi$$  （检索器参数） $$\mathrm{9}$$ （LLM参数）联合优化。
+
+2. 检索器优化
+   
+   查询表示融合：  $$\vec{q}^{\exp}=\frac{\vec{q}+\vec{d}^{\exp}}{2}$$
+
+   将原始查询嵌入 $$\vec{q}$$ 与扩展内容嵌入  $$\vec{d}^{\exp}$$ 平均，作为新查询表示。
+
+   对比学习损失：
+
+<img width="557" height="101" alt="image" src="https://github.com/user-attachments/assets/e8229069-ebcc-4dcf-86d8-6d1b07803344" />
+
+负样本 $$\mathcal{D}^{-}$$ 来自同批次内采样
+
+3. LLM优化
+
+奖励函数设计
+
+<img width="474" height="105" alt="image" src="https://github.com/user-attachments/assets/1a1c828e-dac0-42b6-80bb-474a033f1e1f" />
+
+自奖励:用LLM基于标准答案 $$d_{*}$$ 生成回复y（指令："根据查询和相关文档生成直接答案"）。计算y与扩展 dexp的相似度排名  $$R_{\mathrm{self}}(d^{\exp})=\frac{1}{\mathrm{Rank}(y,d^{\exp})}$$    确保扩展与答案语义一致。
+
+检索奖励:将标准答案  $$d_{*}$$   视为伪查询，计算其与扩展 dexp的排名：
+
+$$R_{\mathrm{rank}}(d^{\exp})=\frac{1}{\mathrm{Rank}(d_*,d^{\exp})}$$   对齐检索器偏好，提升扩展的检索效用。
+
+DPO优化LLM:对每个查询 q，用不同温度采样生成扩展候选集 $$\mathcal{D}^q=\{d_1^{\exp},\ldots,d_k^{\exp}\}$$  ,根据奖励 $$R(\cdot)$$ 构建偏好对 $$(d_+^{\exp},d_-^{\exp})$$  满足 $$R(d_+)>R(d_-)$$
+
+DPO损失函数：
+
+$$\mathcal{L}(\mathcal{M};\mathcal{M}^{\mathrm{Ref}})=-\mathbb{E}{(q,d_+,d_-)}\left[\log\sigma\left(\beta\log\frac{\mathcal{M}(d_+\mid q)}{\mathcal{M}^{\mathrm{Ref}}(d_+\mid q)}-\beta\log\frac{\mathcal{M}(d_-\mid q)}{\mathcal{M}^{\mathrm{Ref}}(d_-\mid q)}\right)\right]$$
+
+其中β为缩放超参,  $$\mathcal{M}^{\mathrm{Ref}}$$  为冻结的参考模型。
+
 # 25.7.4
 
 ## 1.看了一篇论文 Corpus-Steered Query Expansion with Large Language Models
