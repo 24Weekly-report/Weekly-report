@@ -1,3 +1,9 @@
+2025.7.18
+
+阅读论文On Synthetic Data Strategies for Domain-Specific Generative Retrieval[[笔记](https://github.com/24Weekly-report/Weekly-report/blob/a1aedd1dc513dc39dce0790da658bf36152909d6/%E6%9D%8E%E6%B5%A9%E5%BC%BA/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/On%20Synthetic%20Data%20Strategies%20for%20Domain-Specific%20Generative%20Retrieval.md)]
+
+跑实验
+
 2025.7.11
 
 阅读一篇论文DRAMA： Diverse Augmentation from Large Language Models to Smaller Dense Retrievers  ACL2025[[笔记](https://github.com/24Weekly-report/Weekly-report/blob/62d83f9762f3696062d37c880d272e9cc533afff/%E6%9D%8E%E6%B5%A9%E5%BC%BA/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/DRAMA%EF%BC%9A%20Diverse%20Augmentation%20from%20Large%20Language%20Models%20to%20Smaller%20Dense%20Retrievers%20%20ACL2025.md)]
