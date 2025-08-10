@@ -1,3 +1,8 @@
+2025.8.8
+
+阅读犯罪信息论文Crime Analysis and Prediction Using Data Mining[[笔记](https://github.com/24Weekly-report/Weekly-report/blob/d3907449abf2e0992b437c25a2bc18aef8aeef7c/%E6%9D%8E%E6%B5%A9%E5%BC%BA/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/%E7%8A%AF%E7%BD%AA%E4%BF%A1%E6%81%AF/Crime%20Analysis%20and%20Prediction%20Using%20Data%20Mining.md)]
+
+
 2025.7.18
 
 阅读论文On Synthetic Data Strategies for Domain-Specific Generative Retrieval[[笔记](https://github.com/24Weekly-report/Weekly-report/blob/a1aedd1dc513dc39dce0790da658bf36152909d6/%E6%9D%8E%E6%B5%A9%E5%BC%BA/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/On%20Synthetic%20Data%20Strategies%20for%20Domain-Specific%20Generative%20Retrieval.md)]
